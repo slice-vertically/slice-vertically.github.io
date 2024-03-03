@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "It's live!"
+date:   2024-03-03 12:30:57 -0600
+---
+Trying _out_ a **couple of things**.
+
+Some JS:
+
+```js
+// file.js
+const foo = 'bar';
+```
+
+Headings:
+
+# Heading 1
+
+## Heading 2
+
+Some LaTeX:
+
+$p^k (1 - p)^{1-k}$
+
+A table:
+
+| Customer 1 | Customer 2 | Customer 3 | TOTAL |
+| --- | --- | --- | --- |
+| C (0.7) | C (0.7) | C (0.7) | 0.7 · 0.7 · 0.7 = 0.343 |
+| **C (0.7)** | **C (0.7)** | E (0.3) | **0.7 · 0.7 · 0.3 = 0.147** |
+| **C (0.7)** | E (0.3) | **C (0.7)** | **0.7 · 0.3 · 0.7 = 0.147** |
+| C (0.7) | E (0.3) | E (0.3) | 0.7 · 0.3 · 0.3 = 0.063 |
+| E (0.3) | **C (0.7)** | **C (0.7)** | **0.3 · 0.7 · 0.7 = 0.147** |
+| C (0.7) | E (0.3) | E (0.3) | 0.7 · 0.3 · 0.3 = 0.063 |
+| E (0.3) | E (0.3) | C (0.7) | 0.3 · 0.3 · 0.7 = 0.063 |
+| E (0.3) | E (0.3) | C (0.7) | 0.3 · 0.3 · 03 = 0.027 |
+
+A list:
+
+1. One item
+2. Another item
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check it out, it's [an example webpage][example-com] and aother one [here](https://example.com).
+
+[example-com]: https://example.com
