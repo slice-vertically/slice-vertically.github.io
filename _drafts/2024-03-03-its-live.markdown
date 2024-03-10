@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: post-with-tags
 title:  "It's live!"
 date:   2024-03-03 12:30:57 -0600
+tags: writing
 ---
+
 Trying _out_ a **couple of things**.
 
 Some JS:
