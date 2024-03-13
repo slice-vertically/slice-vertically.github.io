@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+<h1>Posts</h1>
+<br><br>
+{% for post in site.posts %}
+  	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  	{{ post.content }}
+  	<br><br>
+  	<hr>
+	<br><br>
+{% endfor %}
