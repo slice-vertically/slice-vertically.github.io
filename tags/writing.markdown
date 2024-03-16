@@ -1,7 +1,8 @@
 ---
-layout: tagpage
-tag: writing
+layout:    tagpage
+tag:       writing
 permalink: /tags/writing/
+title:     writing
 ---
 
 [Writing for Engineers - Heinrich Hartmann](https://www.heinrichhartmann.com/posts/writing/)
