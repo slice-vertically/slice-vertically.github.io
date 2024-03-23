@@ -5,14 +5,8 @@ layout: page
 {% for post in site.posts %}
   	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   	<article>
-  		{% for tag in post.tags %}
-		  {% assign tag_slug = tag | slugify: "raw" %}
-		  <a class="tag-link"
-		    href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }}
-		    rel="category tag">
-		    #{{ tag }}
-		  </a>
-		{% endfor %}
+  		{% include tag-list.html tags=post.tags %}
+  		<br><br>
   		{{ post.content }}
   	</article>
   	<br><br>

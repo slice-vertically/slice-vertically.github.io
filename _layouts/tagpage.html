@@ -6,11 +6,24 @@ layout: page # This template inherits from my basic page template
     {% for post in site.posts %}
       {% if post.tags contains page.tag %}
       <li>
-        {{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
+        <p>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          {% include tag-list.html tags=post.tags %}
+        </p>
       </li>
       {% endif %}
     {% endfor %}
 </ul>
 
-<h2>Links</h2>
-{{ content }}
+{% assign links_with_tag = site.data.links | where_exp: "link", "link.tag == page.tag" %}
+{% if links_with_tag.size > 0 %}
+  <h2>Links</h2>
+  <ul>
+    {% for link in links_with_tag %}
+      <li>
+        <a href="{{ link.url }}">{{ link.text }}</a>
+        {% include tag-list.html tags=link.tag %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

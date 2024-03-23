@@ -1,0 +1,50 @@
+- tag: writing
+  url: "https://www.heinrichhartmann.com/posts/writing/"
+  text: "Writing for Engineers - Heinrich Hartmann"
+- tag: writing
+  url: "https://paulgraham.com/writing44.html"
+  text: "Writing, briefly - Paul Graham"
+- tag: writing
+  url: "https://documentation.divio.com/"
+  text: "The Documentation System - Divio"
+- tag: writing
+  url: "https://www.nngroup.com/articles/how-users-read-on-the-web/"
+  text: "How users read on the web - Nielsen Norman Group"
+- tag: writing
+  url: "https://www.jrothman.com/?s=writing+secret"
+  text: "Writing secrets - Johanna Rothman"
+- tag: writing
+  url: "https://www.writethedocs.org/guide/index.html"
+  text: "Documentation guide - Write the docs"
+- tag: writing
+  url: "https://surfingcomplexity.blog/2022/11/24/writing-docs-well-why-should-a-software-engineer-care/"
+  text: "Writing docs well - Surfing complexity"
+- tag: writing
+  url: "https://developers.google.com/tech-writing/one"
+  text: "Technical Writing One - Google"
+- tag: writing
+  url: "https://leadership.garden/the-rule-of-3-in-communication/"
+  text: "The rule of 3 - Leadership garden"
+
+- tag: postgres database
+  url: "https://www.crunchydata.com/developers/tutorials"
+  text: "PostgreSQL tutorials - Crunchy Data"
+- tag: postgres database
+  url: "https://thoughtbot.com/blog/reading-an-explain-analyze-query-plan"
+  text: "Reading a Postgres EXPLAIN ANALYZE Query Plan - thoughtbot"
+- tag: postgres database
+  url: "https://ftisiot.net/postgresqljson/main/"
+  text: "How to JSON in PostgreSQL - Francesco Tisiot"
+- tag: postgres database
+  url: "https://storage.pardot.com/890043/1680097111JPZJc433/postgresql_jsonb_cheatsheet_en.pdf"
+  text: "PostgreSQL JSONB Cheatsheet - Aiven"
+- tag: postgres database
+  url: "https://wiki.postgresql.org/wiki/Don't_Do_This"
+  text: "Don't do this - PostgreSQL Wiki"
+- tag: postgres database
+  url: "https://psql-tips.org/psql_tips_all.html"
+  text: "psql tips - Lætitia AVROT"
+
+- tag: json
+  url: "https://earthly.dev/blog/jq-select/"
+  text: "An Introduction to JQ - Earthly"
