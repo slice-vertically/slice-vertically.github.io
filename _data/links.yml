@@ -48,3 +48,14 @@
 - tag: json
   url: "https://earthly.dev/blog/jq-select/"
   text: "An Introduction to JQ - Earthly"
+
+- tag: regexp
+  url: "http://damian.conway.org/Seminars/EverythingRegex.html"
+  text: "Everything You Know About Regexes Is Wrong - Damian Conway"
+  notes: "There used to be a YouTube video, but it has been taken down. Looks like Damian now offers it as a seminar. The text of the presentation can be found by looking for the title though."
+- tag: regexp
+  url: "https://www.regular-expressions.info/quickstart.html"
+  text: "Quickstart - Regular-Expressions.info"
+- tag: regexp
+  url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#regular-expressions"
+  text: "Javascript regular expressions - freeCodeCamp"

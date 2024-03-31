@@ -1,0 +1,40 @@
+---
+layout: post-with-tags
+title:  "Matchers"
+date:   2024-03-31
+tags:   regexp
+---
+
+> ℹ Examples shown in JS so that they're easy to check.
+
+## + (one or more)
+
+```js
+/a+/.test("a");
+// true
+/a+/.test("aaa");
+// true
+/a+/.test("");
+// false
+```
+## * (zero or more)
+
+```js
+/a*/.test("a");
+// true
+/a*/.test("aaa");
+// true
+/a*/.test("");
+// true
+```
+
+## {x, y} (from x to y number of times)
+
+```js
+/a{2,3}/.test("a");
+// false
+/a{2,3}/.test("aaa");
+// true
+/a{2,3}/.test("");
+// false
+```

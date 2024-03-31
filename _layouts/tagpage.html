@@ -30,6 +30,9 @@ layout: page # This template inherits from my basic page template
           <span>
             {% include tag-list.html tags=link.tag %}
           </span>
+          {% if link.notes %}
+            <span>{{ link.notes }}</span>
+          {% endif %}
         </p>
       </li>
     {% endfor %}
