@@ -5,7 +5,7 @@ date:   2024-03-23
 tags:   oracle database
 ---
 
-```plsql
+```sql
 SELECT *
 FROM YOUR_TABLE
 FETCH FIRST 10 ROWS ONLY;

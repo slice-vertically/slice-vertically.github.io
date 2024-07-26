@@ -5,14 +5,14 @@ date:   2024-03-23
 tags:   oracle database
 ---
 
-```plsql
+```sql
 MIN(interesting_column) KEEP (DENSE_RANK FIRST ORDER BY interesting_column)
 	OVER (PARTITION BY grouping_column) AS interesting_column_alias
 ```
 
 ## Example
 
-```plsql
+```sql
 CREATE TABLE emp (
 	empno number(4) constraint pk_emp primary key,
 	ename varchar2(10),
@@ -38,7 +38,7 @@ SELECT 1 FROM DUAL; -- hack for versions smaller than Oracle 23c
 Get the employee with the smallest hiredate for each department (`10`, `20` or `30`):
 
 
-```plsql
+```sql
 SELECT
 	DISTINCT deptno, -- for each department 
 	MIN(hiredate) KEEP (DENSE_RANK FIRST ORDER BY hiredate)

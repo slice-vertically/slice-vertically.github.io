@@ -5,14 +5,14 @@ date:   2024-03-23
 tags:   oracle database
 ---
 
-```plsql
+```sql
 GROUP BY column_with_duplicated_value_1, column_with_duplicated_value_2
 HAVING COUNT(*) >= 2
 ```
 
 ## Example
 
-```plsql
+```sql
 CREATE TABLE emp (
 	empno number(4) constraint pk_emp primary key,
 	ename varchar2(10),
@@ -35,7 +35,7 @@ INTO emp VALUES (7934,'MILLER',to_date('13-07-1987','dd-mm-yyyy'),20)
 SELECT 1 FROM DUAL; -- hack for versions smaller than Oracle 23c
 ```
 
-```plsql
+```sql
 SELECT deptno, hiredate
 FROM emp
 GROUP BY deptno, hiredate
