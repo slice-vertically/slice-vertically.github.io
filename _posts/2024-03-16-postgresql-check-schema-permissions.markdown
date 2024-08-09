@@ -8,10 +8,26 @@ tags:   postgres database
 ```sql
 SELECT * FROM pg_namespace;
 ```
-
-| oid | nspname | nspowner | nspacl |
-| ---- | ---- | ---- | ---- |
-| 1 | test_schema | 10 | {user2=UC/user1} |
+<div style="overflow-x: auto;">
+	<table>
+	  <thead>
+	    <tr>
+	      <th>oid</th>
+	      <th>nspname</th>
+	      <th>nspowner</th>
+	      <th>nspacl</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>1</td>
+	      <td>test_schema</td>
+	      <td>10</td>
+	      <td>{user2=UC/user1}</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
 
 In this case, `user2` has **U**SAGE and **C**REATION permissions on the `test_schema` granted by `user1`.
 
