@@ -20,16 +20,68 @@ You are running an A/B test. 20% of customers click variation A, the rest (80%) 
 
 What's the probability of getting two clicks on variation A in the next 3 visits?
 
-| Visit 1 | Visit 2 | Visit 3 | TOTAL |
-| --- | --- | --- | --- |
-| A (0.2) | A (0.2) | A (0.2) | 0.2 × 0.2 × 0.2 = 0.008 |
-| **A (0.2)** | **A (0.2)** | **B (0.8)** | **0.2 × 0.2 × 0.8 = 0.032** |
-| **A (0.2)** | **B (0.8)** | **A (0.2)** | **0.2 × 0.8 × 0.2 = 0.032** |
-| A (0.2) | B (0.8) | B (0.8) | 0.2 × 0.8 × 0.8 = 0.128 |
-| **B (0.8)** | **A (0.2)** | **A (0.2)** | **0.8 × 0.2 × 0.2 = 0.032** |
-| B (0.8) | A (0.2) | B (0.8) | 0.8 × 0.2 × 0.8 = 0.128 |
-| B (0.8) | B (0.8) | A (0.2) | 0.8 × 0.8 × 0.2 = 0.128 |
-| B (0.8) | B (0.8) | B (0.8) | 0.8 × 0.8 × 0.8 = 0.512 |
+<div style="overflow-x: auto;">
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Visit 1</th>
+	      <th>Visit 2</th>
+	      <th>Visit 3</th>
+	      <th>TOTAL</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>A (0.2)</td>
+	      <td>A (0.2)</td>
+	      <td>A (0.2)</td>
+	      <td>0.2 × 0.2 × 0.2 = 0.008</td>
+	    </tr>
+	    <tr>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>B (0.8)</strong></td>
+	      <td><strong>0.2 × 0.2 × 0.8 = 0.032</strong></td>
+	    </tr>
+	    <tr>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>B (0.8)</strong></td>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>0.2 × 0.8 × 0.2 = 0.032</strong></td>
+	    </tr>
+	    <tr>
+	      <td>A (0.2)</td>
+	      <td>B (0.8)</td>
+	      <td>B (0.8)</td>
+	      <td>0.2 × 0.8 × 0.8 = 0.128</td>
+	    </tr>
+	    <tr>
+	      <td><strong>B (0.8)</strong></td>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>A (0.2)</strong></td>
+	      <td><strong>0.8 × 0.2 × 0.2 = 0.032</strong></td>
+	    </tr>
+	    <tr>
+	      <td>B (0.8)</td>
+	      <td>A (0.2)</td>
+	      <td>B (0.8)</td>
+	      <td>0.8 × 0.2 × 0.8 = 0.128</td>
+	    </tr>
+	    <tr>
+	      <td>B (0.8)</td>
+	      <td>B (0.8)</td>
+	      <td>A (0.2)</td>
+	      <td>0.8 × 0.8 × 0.2 = 0.128</td>
+	    </tr>
+	    <tr>
+	      <td>B (0.8)</td>
+	      <td>B (0.8)</td>
+	      <td>B (0.8)</td>
+	      <td>0.8 × 0.8 × 0.8 = 0.512</td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
 
 The probabilities for "two A clicks" all work out to be 0.032, because we are expecting two A clicks (0.2) and one B (0.8). In other words: 
 

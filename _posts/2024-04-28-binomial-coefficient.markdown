@@ -18,7 +18,14 @@ We'll express it as `C(n, k)`.
 
 You have a set of 4 colours and you need to choose 3. How many distinct possibilities are there?
 
-Red | Green | Blue | Yellow
+<div style="overflow-x: auto;">
+	<table><tr>
+		<td>Red</td>
+		<td>Green</td>
+		<td>Blue</td>
+		<td>Yellow</td>
+	</tr></table>
+</div>
 
 Color 1 | Color 2 | Color 3
 --- | --- | ---
