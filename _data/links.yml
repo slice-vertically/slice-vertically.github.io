@@ -59,3 +59,7 @@
 - tag: regexp
   url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#regular-expressions"
   text: "Javascript regular expressions - freeCodeCamp"
+
+- tag: bash
+  url: "https://www.gnu.org/software/bash/manual/html_node/index.html"
+  text: "Bash manual - GNU"
