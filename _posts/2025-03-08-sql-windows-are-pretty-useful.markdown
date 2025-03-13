@@ -5,7 +5,7 @@ date:   2025-03-08
 tags:   database
 ---
 <figure>
-	<img src="{% link assets/windows.png %}" style="width: 100%" />
+	<img src="{% link assets/windows.png %}" class="article-image" />
 	<figcaption>Émile-Antoine Bayard, illustration in Jules Verne's 'From the Earth to the Moon'</figcaption>
 </figure>
 
