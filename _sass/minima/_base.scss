@@ -260,3 +260,12 @@ table {
   object-fit: cover;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0));
 }
+
+.tag-list {
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr;
+  @include media-query($on-phone) {
+    display: block;
+  }
+  margin-bottom: $spacing-unit / 1.50;
+}
