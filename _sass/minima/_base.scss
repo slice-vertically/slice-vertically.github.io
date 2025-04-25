@@ -262,10 +262,10 @@ table {
 }
 
 .tag-list {
-  display: grid;
-  grid: auto-flow / 1fr 1fr 1fr;
+  ul { overflow: scroll; }
+  li { display: inline; float: left; width: 33%; margin-bottom: 1rem; }
   @include media-query($on-phone) {
-    display: block;
+    li { width: 50%; }
   }
   margin-bottom: $spacing-unit / 1.50;
 }

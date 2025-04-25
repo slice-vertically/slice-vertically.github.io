@@ -3,37 +3,10 @@ layout: page
 ---
 
 <div class="tag-list">
-    <ul style="margin-bottom: 0;">
-        <li>
-            <a href="/tags/database">database</a>
-            <ul>
-                <li>
-                    <a href="/tags/postgres">postgres</a>
-                </li>
-                <li>
-                    <a href="/tags/oracle">oracle</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="/tags/regexp">regexp</a>
-        </li>
-    </ul>
-    <ul style="margin-bottom: 0;">
-        <li>
-            <a href="/tags/statistics">statistics</a>
-        </li>
-        <li>
-            <a href="/tags/json">json</a>
-        </li>
-    </ul>
-    <ul style="margin-bottom: 0;">
-        <li>
-            <a href="/tags/bash">bash</a>
-        </li>
-        <li>
-            <a href="/tags/writing">writing</a>
-        </li>
+    <ul>
+        {% for tag in site.tags %}
+            <li><a href="/tags/{{tag[0]}}">{{ tag[0] }}</a></li>
+        {% endfor %}
     </ul>
 </div>
 
