@@ -114,14 +114,6 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
 }
 
 
@@ -217,13 +209,6 @@ pre {
     vertical-align: text-top;
 }
 
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
-
 
 /**
  * Tables
@@ -262,10 +247,16 @@ table {
 }
 
 .tag-list {
-  ul { overflow: scroll; }
-  li { display: inline; float: left; width: 33%; margin-bottom: 1rem; }
+  ul { overflow: scroll; margin-left: 0; }
+  li {
+    display: list-item;
+    float: left;
+    width: 25%;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }
   @include media-query($on-phone) {
-    li { width: 50%; }
+    li { width: 33%; }
   }
   margin-bottom: $spacing-unit / 1.50;
 }
