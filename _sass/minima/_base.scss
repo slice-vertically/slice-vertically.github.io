@@ -247,7 +247,7 @@ table {
 }
 
 .tag-list {
-  ul { overflow: scroll; margin-left: 0; scrollbar-width: none; }
+  ul { overflow: auto; margin-left: 0; }
   li {
     display: list-item;
     float: left;
